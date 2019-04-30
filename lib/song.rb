@@ -57,7 +57,7 @@ class Song
     new_all = []
     @@all.each { |song| name_arr << song.name}
     name_arr.sort!
-    name_arr.each { |name| new_all << @@all.find(name) }
+    name_arr.each { |name| new_all << self.find_by_name(name) }
     new_all
   end
 
