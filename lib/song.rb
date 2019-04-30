@@ -51,7 +51,7 @@ class Song
       object
     end
   end
-binding.pry
+
   def self.alphabetical
     name_arr = []
     new_all = []
